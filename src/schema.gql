@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PostResponseDto {
+  id: Float!
+  title: String!
+  content: String!
+  createdAt: String!
+}
+
+type Query {
+  getPosts: PostResponseDto!
+}
+
+type Mutation {
+  createPost(post: PostInputDto!): PostResponseDto!
+}
+
+input PostInputDto {
+  title: String!
+  content: String!
+}
